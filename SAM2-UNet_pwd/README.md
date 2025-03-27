@@ -27,6 +27,7 @@
 🚀 학습 실행 예시
 ------------------------------------------
 # 1%
+```bash
 python new_train.py \\
   --hiera_path "./sam2_hiera_large.pt" \\
   --train_image_path "../data/train_1/images" \\
@@ -36,7 +37,8 @@ python new_train.py \\
   --save_path "../SAM2-UNet_saver/fp_1" \\
   --log_path "../SAM2-UNet_saver/fp_1" \\
   --epoch 200 > sam2unet_1.txt
-
+```
+```bash
 # 10%
 python new_train.py \\
   --hiera_path "./sam2_hiera_large.pt" \\
@@ -47,7 +49,8 @@ python new_train.py \\
   --save_path "../SAM2-UNet_saver/fp_10" \\
   --log_path "../SAM2-UNet_saver/fp_10" \\
   --epoch 200 > sam2unet_10.txt
-
+```
+```bash
 # 30%
 python new_train.py \\
   --hiera_path "./sam2_hiera_large.pt" \\
@@ -58,7 +61,8 @@ python new_train.py \\
   --save_path "../SAM2-UNet_saver/fp_30" \\
   --log_path "../SAM2-UNet_saver/fp_30" \\
   --epoch 200 > sam2unet_30.txt
-
+```
+```bash
 # 50%
 python new_train.py \\
   --hiera_path "./sam2_hiera_large.pt" \\
@@ -69,7 +73,8 @@ python new_train.py \\
   --save_path "../SAM2-UNet_saver/fp_50" \\
   --log_path "../SAM2-UNet_saver/fp_50" \\
   --epoch 200 > sam2unet_50.txt
-
+```
+```bash
 # 100%
 python new_train.py \\
   --hiera_path "./sam2_hiera_large.pt" \\
@@ -80,18 +85,20 @@ python new_train.py \\
   --save_path "../SAM2-UNet_saver/fp" \\
   --log_path "../SAM2-UNet_saver/fp" \\
   --epoch 200 > sam2unet.txt
-
+```
 ------------------------------------------
 🧪 추론 실행 예시
 ------------------------------------------
 # 1%
+```bash
 python pred_mask_SAM2-UNet.py \\
   --hiera_path "./sam2_hiera_large.pt" \\
   --val_image_path "../data/val_1/images" \\
   --val_mask_path "../data/val_1/gt" \\
   --checkpoint_path "../SAM2-UNet_saver/fp_1/SAM2-UNet-best-iou.pth" \\
   --result_dir "../predicts/SAM2-UNet/pred_1"
-
+```
+```bash
 # 10%
 python pred_mask_SAM2-UNet.py \\
   --hiera_path "./sam2_hiera_large.pt" \\
@@ -99,7 +106,8 @@ python pred_mask_SAM2-UNet.py \\
   --val_mask_path "../data/val_10/gt" \\
   --checkpoint_path "../SAM2-UNet_saver/fp_10/SAM2-UNet-best-iou.pth" \\
   --result_dir "../predicts/SAM2-UNet/pred_10"
-
+```
+```bash
 # 30%
 python pred_mask_SAM2-UNet.py \\
   --hiera_path "./sam2_hiera_large.pt" \\
@@ -107,7 +115,8 @@ python pred_mask_SAM2-UNet.py \\
   --val_mask_path "../data/val_30/gt" \\
   --checkpoint_path "../SAM2-UNet_saver/fp_30/SAM2-UNet-best-iou.pth" \\
   --result_dir "../predicts/SAM2-UNet/pred_30"
-
+```
+```bash
 # 50%
 python pred_mask_SAM2-UNet.py \\
   --hiera_path "./sam2_hiera_large.pt" \\
@@ -115,7 +124,8 @@ python pred_mask_SAM2-UNet.py \\
   --val_mask_path "../data/val_50/gt" \\
   --checkpoint_path "../SAM2-UNet_saver/fp_50/SAM2-UNet-best-iou.pth" \\
   --result_dir "../predicts/SAM2-UNet/pred_50"
-
+```
+```bash
 # 100%
 python pred_mask_SAM2-UNet.py \\
   --hiera_path "./sam2_hiera_large.pt" \\
@@ -123,6 +133,7 @@ python pred_mask_SAM2-UNet.py \\
   --val_mask_path "../data/val/gt" \\
   --checkpoint_path "../SAM2-UNet_saver/fp/SAM2-UNet-best-iou.pth" \\
   --result_dir "../predicts/SAM2-UNet/pred"
+```
 
 ※ 추론 결과 마스크는 predicts/SAM2-UNet/ 디렉토리에 저장됩니다.
    각 실험 비율별로 pred_1, pred_10, pred_30, pred_50, pred_100 형태로 나뉩니다.

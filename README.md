@@ -5,7 +5,7 @@
 ---
 
 ## 📂 프로젝트 구조
-
+```bash
 PWD_with_SAM/
 ├── data/                 # 원본 및 샘플링 데이터
 ├── SAM2-UNet_pwd/        # SAM2-UNet 모델 학습 및 예측
@@ -14,7 +14,7 @@ PWD_with_SAM/
 ├── Yolo_saver/           # YOLOv8 학습 결과 (체크포인트)
 ├── scripts/              # 데이터 전처리 및 평가 스크립트
 └── predicts/             # 모델 예측 마스크 저장 경로
-
+```
 ---
 
 ## 🚀 시작하기
@@ -39,7 +39,7 @@ python predict_Yolov8_10.py
 자세히 보기 👉 [Yolo_pwd/README.md](Yolo_pwd/README.md)
 
 - SAM2-UNet
-
+```bash
 cd SAM2-UNet_pwd
 pip install -r requirements.txt
 
@@ -59,7 +59,7 @@ python pred_mask_SAM2-UNet.py \
   --val_mask_path "../data/val_10/gt" \
   --checkpoint_path "../SAM2-UNet_saver/fp_10/SAM2-UNet-best-iou.pth" \
   --result_dir "../predicts/SAM2-UNet/pred_10"
-
+```
 자세히 보기 👉 [SAM2-UNet_pwd/README.md](SAM2-UNet_pwd/README.md)
 
 ---
@@ -79,13 +79,14 @@ python scripts/evaluate_masks.py
 ---
 
 ## 📋 필수 환경
+```bash
 
 PyTorch 1.9+
 ultralytics(YOLO) latest
 numpy latest
 Pillow latest
 scikit-learn latest
-
+```
 각 디렉토리 내 requirements.txt 파일 참조하여 설치합니다.
 
 ---
