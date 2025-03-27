@@ -1,6 +1,3 @@
-from pathlib import Path
-
-readme_text = """
 ==========================================
 🧠 SAM2-UNet_pwd - Segmentation Training
 ==========================================
