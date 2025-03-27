@@ -1,6 +1,5 @@
-==========================================
-🧠 SAM2-UNet_pwd - Segmentation Training
-==========================================
+# 🧠 SAM2-UNet_pwd - Segmentation Training
+
 
 이 디렉토리는 SAM2-UNet 기반의 세그멘테이션 학습 및 추론 스크립트를 포함합니다.
 다양한 데이터 비율을 대상으로 SAM2-UNet 학습 및 예측을 수행하며,

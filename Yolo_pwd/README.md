@@ -1,6 +1,4 @@
-====================================
-🦾 Yolo_pwd - YOLOv8 Segmentation Lab
-====================================
+# 🦾 Yolo_pwd - YOLOv8 Segmentation Lab
 
 이 디렉토리는 YOLOv8 기반의 세그멘테이션 실험을 위한 
 학습 및 예측 스크립트를 포함합니다.
