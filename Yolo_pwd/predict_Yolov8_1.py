@@ -25,3 +25,11 @@ for image_name in sorted(image_files):
             cv2.imwrite(save_path, mask)
         else:
             print(f"[경고] {image_name}에서 마스크를 찾을 수 없습니다.")
+
+            # 원본 이미지 크기 가져오기
+            img = cv2.imread(image_path)
+            h, w = img.shape[:2]
+
+            # 검정 마스크 생성 및 저장
+            black_mask = np.zeros((h, w), dtype="uint8")
+            cv2.imwrite(save_path, black_mask)
